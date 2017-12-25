@@ -11,6 +11,9 @@ class App extends Component {
       name1: '111'
     }
   }
+  componentDidCatch(){
+    console.log('error!!!');
+  }
 
   onChangeHandle = (event) => {
     console.log('onChangeHandle', event.target.value)

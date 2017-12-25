@@ -25,6 +25,13 @@ class Form extends Component {
     console.log('shouldComponentUpdate');
     return nextProps.parentName !== '4';
   }
+  componentWillUpdate(){
+    console.log('componentWillUpdate');
+  }
+
+  componentDidUpdate(){
+    console.log('componentDidUpdate');
+  }
 
   render () {
     console.log('render child', this.props)

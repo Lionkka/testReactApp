@@ -17,9 +17,9 @@ class Form extends Component {
     console.log('componentWillUnmount')
   }
 
-  // componentWillReceiveProps (nextProps) {
-  //   console.log('-- new props', this.props.parentName, nextProps.parentName );
-  // }
+  componentWillReceiveProps (nextProps) {
+    console.log('-- new props', this.props.parentName, nextProps.parentName );
+  }
 
   shouldComponentUpdate(nextProps, nextState){
     console.log('shouldComponentUpdate');

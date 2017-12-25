@@ -7,18 +7,18 @@ class App extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      name: 5,
+      name: '',
       name1: '111'
     }
   }
 
   onChangeHandle = (event) => {
-    console.log(event.target.value)
-    this.setState({ name: event.target.value });
+    console.log('onChangeHandle', event.target.value)
+    this.setState({ name: event.target.value })
   }
 
   render () {
-    console.log('!!!');
+    console.log('parent render')
     const a = 5
     const b = 10
     return (
